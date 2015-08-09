@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="webkit" name="renderer">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="keywords" content="中南大学高等研究中心"/>
+    <meta name="description" content="中南大学高等研究中心">
+    <title>中南大学高等研究中心</title>
+    <link type="text/css" rel="stylesheet" href="css/src/main.css">
+    <script>
+        var pageName="expIntro";
+    </script>
+</head>
+<body>
+<div class="wrapper">
+
+    <script src="header.js"></script>
+
+    <div class="main">
+        <ul class="list list1">
+            <li>
+                <a href="exp1Intro.html">高温实验</a>
+            </li>
+            <li>
+                <a href="exp2Intro.html">岩石常规三轴实验</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="js/lib/jquery-1.11.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#menu a[data-page-name='"+pageName+"']").addClass("active");
+    });
+</script>
+</body>
+</html>

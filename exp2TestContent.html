@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="webkit" name="renderer">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="keywords" content="中南大学高等研究中心"/>
+    <meta name="description" content="中南大学高等研究中心">
+    <title>中南大学高等研究中心</title>
+    <link type="text/css" rel="stylesheet" href="css/src/main.css">
+    <script>
+        var pageName="expTestContent";
+    </script>
+</head>
+<body>
+<div class="wrapper">
+
+    <script src="header.js"></script>
+
+    <div class="main" >
+        <div class="single" style="">
+            <h2 style="text-align: center">岩石常规三轴实验定义和测定</h2>
+            <h3>1、抗压强度σ<sub>1</sub></h3>
+            <img src="images/app/exp2TestContentImage.gif">
+            <p>式中： </p>
+            <p> σ<sub>1</sub>——不同侧向应力时的抗压强度（MPa）；</p>
+            <p><i>P</i> ——轴向破坏载荷峰值（N）；</p>
+            <p><i>A</i> ——试样的横截面积（mm2）。</p>
+
+            <h3>2、根据轴向应力σ1和侧向应力σ3求岩石的内摩擦角&#966;和粘聚力C</h3>
+            <img src="images/app/exp2TestContentImage1.gif">
+            <p style="text-align: center;font-size: 12px;">图1 σ<sub>1</sub>～σ<sub>3</sub> 最佳关系曲线</p>
+            <img src="images/app/exp2TestContentImage2.gif">
+            <p style="text-align: center;font-size: 12px;">图2 莫尔应力圆</p>
+            <p>（1）以 为纵坐标， 为横坐标绘制 ～ 最佳关系曲线（直线），如图1所示，按下式直接求 ， 值:</p>
+            <img src="images/app/exp2TestContentImage3.gif">
+            <img src="images/app/exp2TestContentImage4.gif">
+            <p >式中：</p>
+            <p>C——岩石的粘聚力（MPa）；</p>
+            <p>&#966;——岩石的内摩擦角（度）；</p>
+            <p>σ<sub>c</sub> —— σ<sub>1</sub>～σ<sub>3</sub> 最佳关系曲线纵坐标的应力截距（MPa）；</p>
+            <p>&#922; —— σ<sub>1</sub>～σ<sub>3</sub>最佳关系曲线的斜率。</p>
+            <p>（2）在 ～ 最佳关系曲线（直线）上选定若干组对应的值，在剪应力 与正应力 坐标图上以 为圆心，以 为半径绘制莫尔应力圆（如图2），根据莫尔～库仑强度理论确定三轴应力状态下岩石的抗剪强度参数。</p>
+
+            <h3>3、绘制应力--应变曲线</h3>
+            <p>（1）用测微表测定变形时，轴向应变按下式计算：</p>
+            <img src="images/app/exp2TestContentImage5.gif">
+            <img src="images/app/exp2TestContentImage6.gif">
+            <p>式中：</p>
+            <p>&epsilon;<sub>h</sub>——轴向应变值；</p>
+            <p><i>L</i>——试样高度（mm）；</p>
+            <p>&#916;<i>L</i>——试样压缩变形值（mm）；</p>
+            <p>&#916;<i>L</i><sub>1</sub>——测定的总变形值（mm）；</p>
+            <p>&#916;<i>L</i><sub>2</sub>——三轴压力室构件的变形值（mm）。</p>
+            <p>（2）用电阻应变仪测定应变时，按下式计算试样的体积应变值</p>
+            <img src="images/app/exp2TestContentImage7.gif">
+            <p>式中：</p>
+            <p>&epsilon;<sub>v</sub>——某一应力下的体积应变值；</p>
+            <p>&epsilon;<sub>h</sub>——某一应力下的纵向应变值；</p>
+            <p>&epsilon;<sub>d</sub>——某一应力下的横向应变值。</p>
+            <p>（3）绘制应力--应变关系曲线，如图3所示。</p>
+            <img src="images/app/exp2TestContentImage8.jpg">
+            <p style="text-align: center;font-size: 12px;">图3  三轴抗压强度应力～应变曲线图</p>
+            <p>（4）根据应力--应变关系曲线，分别计算弹性模量，泊松比:</p>
+            <img src="images/app/exp2TestContentImage9.gif">
+            <p>式中：</p>
+            <p><i>E</i><sub>50</sub>——弹性模量（MPa）；</p>
+            <p>(σ<sub>1</sub>～σ<sub>3</sub>)<sub>50</sub>——相当于50%主应力差的应力值（MPa）；</p>
+            <p>&epsilon;<sub>h50</sub>——应力为抗压强度50%时的纵向应变值。</p>
+            <p>（5）取应力为抗压强度50%时的横向应变值和纵向应变值计算泊松比。</p>
+            <img src="images/app/exp2TestContentImage10.gif">
+            <p>式中：</p>
+            <p>&mu;——泊松比；</p>
+            <p>&epsilon;<sub>d50</sub>——应力为主应力差50%时的横向应变值；</p>
+            <p>&epsilon;<sub>h50</sub>——应力为主应力差50%时的纵向应变值。</p>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/lib/jquery-1.11.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#menu a[data-page-name='"+pageName+"']").addClass("active");
+    });
+</script>
+</body>
+</html>

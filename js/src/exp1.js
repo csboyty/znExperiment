@@ -1,0 +1,213 @@
+var exp1={
+    stepTips:{
+
+            1:"1、打开控制器和计算机电源",
+            2:"2、打开站台软件",
+            3:"3、选择高温实验软件",
+            4:"4、测量试件直径和原始标距",
+            5:"5、安装试件",
+            6:"6、夹住试件组上端",
+            7:"7、调整试验机横梁高度",
+            8:"8、打开液压源，总站低压",
+            9:"9、打开液压源，总站高压",
+            10:"10、打开液压源，分站低压",
+            11:"11、打开液压源，分站高压",
+            12:"12、位移控制模式，勾选",
+            13:"13、调整作动器高度",
+            14:"14、力清零",
+            15:"15、转到力控模式",
+            16:"16、夹住试件组下端",
+            17:"17、位移清零",
+            18:"18、设置实验参数-加载速度",
+            19:"19、设置实验参数-数据采集",
+            20:"20、设置实验参数-实验名称",
+            21:"21、设置位移和力的极限保护",
+            22:"22、合上高温炉",
+            23:"23、加温及保温",
+            24:"24、自动控制（取消钩子）",
+            25:"25、开始实验",
+            26:"26、实验结束，显示曲线"
+
+    },
+    setStepTip:function(index){
+        $("#stepTipContent").text(this.stepTips[index]);
+    }
+};
+$(document).ready(function(){
+    $("#menu a[data-page-name='"+pageName+"']").addClass("active");
+    exp1.setStepTip(1);
+
+    $("#step1Ctrl1").click(function(){
+        $(this).remove();
+        if($("#step1Ctrl2").length==0){
+            $(".step2").removeClass("hidden");
+            exp1.setStepTip(2);
+        }
+    });
+    $("#step1Ctrl2").click(function(){
+        $(this).remove();
+        if($("#step1Ctrl1").length==0){
+            $(".step2").removeClass("hidden");
+            exp1.setStepTip(2);
+        }
+    });
+
+    $("#step2Ctrl").click(function(){
+        $(".step2").remove();
+        $(".step3").removeClass("hidden");
+        exp1.setStepTip(3);
+    });
+
+    $("#step3Ctrl").click(function(){
+        $(".step3").remove();
+        $(".step4").removeClass("hidden");
+        exp1.setStepTip(4);
+    });
+
+    $("#step4Ctrl").click(function(){
+        $(".step4").remove();
+        $(".step5").removeClass("hidden");
+        exp1.setStepTip(5);
+    });
+
+    $("#step5Ctrl").click(function(){
+        $(this).remove();
+        $("#step5Short").animate({
+            left:440
+        },1000,function(){
+           $(".step5").remove();
+           $(".step61").not().removeClass("hidden");
+           exp1.setStepTip(6);
+        })
+    });
+
+    $("#step6Ctrl1").click(function(){
+        $(this).remove();
+        $("#step6Long").animate({
+            left:182,
+            top:230
+        },2000,function(){
+            $(".step62").removeClass("hidden")
+        });
+    });
+    $("#step6Ctrl2").click(function(){
+        $(".step62").remove();
+        $(".step61").remove();
+        $(".step7").removeClass("hidden");
+        $("#device").attr("src","images/exp1/devicePart2.png");
+        exp1.setStepTip(7);
+    });
+
+    $("#step7Ctrl").click(function(){
+        $(this).remove();
+        $("#device1").animate({
+            top:130
+        },1000,function(){
+            $(".step7").remove();
+            $("#device").attr("src","images/exp1/device1.png");
+            $(".step8").removeClass("hidden");
+            exp1.setStepTip(8);
+        })
+    });
+    $("#step8Ctrl").click(function(){
+        $(".step8").remove();
+        $(".step9").removeClass("hidden");
+        exp1.setStepTip(9);
+    });
+    $("#step9Ctrl").click(function(){
+        $(".step9").remove();
+        $(".step10").removeClass("hidden");
+        exp1.setStepTip(10);
+    });
+    $("#step10Ctrl").click(function(){
+        $(".step10").remove();
+        $(".step11").removeClass("hidden");
+        exp1.setStepTip(11);
+    });
+
+    $("#step11Ctrl").click(function(){
+        $(".step11").remove();
+        $(".step12").removeClass("hidden");
+        exp1.setStepTip(12);
+    });
+
+    $("#step12Ctrl").click(function(){
+        $(".step12").remove();
+        $(".step13").removeClass("hidden");
+        exp1.setStepTip(13);
+    });
+
+    $("#step13Ctrl").click(function(){
+        $(".step13").remove();
+        $(".step14").removeClass("hidden");
+        exp1.setStepTip(14);
+    });
+
+    $("#step14Ctrl").click(function(){
+        $(".step14").remove();
+        $(".step15").removeClass("hidden");
+        exp1.setStepTip(15);
+    });
+
+    $("#step15Ctrl").click(function(){
+        $(".step15").remove();
+        $(".step16").removeClass("hidden");
+        exp1.setStepTip(16);
+    });
+    $("#step16Ctrl").click(function(){
+        $(".step16").remove();
+        $(".step17").removeClass("hidden");
+        exp1.setStepTip(17);
+    });
+
+    $("#step17Ctrl").click(function(){
+        $(".step17").remove();
+        $(".step18").removeClass("hidden");
+        exp1.setStepTip(18);
+    });
+
+    $("#step18Ctrl").click(function(){
+        $(".step18").remove();
+        $(".step19").removeClass("hidden");
+        exp1.setStepTip(19);
+    });
+    $("#step19Ctrl").click(function(){
+        $(".step19").remove();
+        $(".step20").removeClass("hidden");
+        exp1.setStepTip(20);
+    });
+    $("#step20Ctrl").click(function(){
+        $(".step20").remove();
+        $(".step21").removeClass("hidden");
+        exp1.setStepTip(21);
+    });
+    $("#step21Ctrl").click(function(){
+        $(".step21").remove();
+        $(".step22").removeClass("hidden");
+        exp1.setStepTip(22);
+    });
+    $("#step22Ctrl").click(function(){
+        $(".step22").remove();
+        $("#device").attr("src","images/exp1/device2.png");
+        $(".step23").removeClass("hidden");
+        exp1.setStepTip(23);
+    });
+    $("#step23Ctrl").click(function(){
+        $(".step23").remove();
+        $(".step24").removeClass("hidden");
+        exp1.setStepTip(24);
+    });
+    $("#step24Ctrl").click(function(){
+        $(".step24").remove();
+        $(".step25").removeClass("hidden");
+        exp1.setStepTip(25);
+    });
+    $("#step25Ctrl").click(function(){
+        $(".step25").remove();
+        $("#step26").attr("src","images/exp1/step26/computerContent.gif").removeClass("hidden");
+    });
+
+    $("#restart").click(function(){
+        window.location.reload();
+    });
+});
