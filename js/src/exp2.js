@@ -13,18 +13,18 @@ var exp2={
         11:"11、加载模式及速度",
         12:"12、需记录参数及采样速率",
         13:"13、保存路径、形式和格式",
-        14:"14、各参数清零、实时显示窗口",
+        14:"14、打开其他窗口",
         15:"15、力-位移曲线显示窗口",
         16:"16、设置参数",
         17:"17、打开手动控制窗口",
-        18:"18、力清零",
+        18:"18、载荷清零",
         19:"19、设置参数",
         20:"20、施加预载荷",
         21:"21、围压腔下落并固定",
         22:"22、注油",
         23:"23、放气",
         24:"24、位移清零，设置保护",
-        25:"25、打开实验保护设置窗口",
+        25:"18、打开实验保护设置窗口",
         26:"26、设置参数",
         27:"27、自动控制（取消钩子），开始实验",
         28:"28、实验结果",
@@ -35,11 +35,21 @@ var exp2={
     },
     setStepTip:function(index){
         $("#stepTipContent").text(this.stepTips[index]);
+    },
+    animated:function(){
+        var me=this;
+        $(".animate").animate({
+            "opacity":0
+        },600,function(){
+            $(".animate").css("opacity",1);
+            me.animated();
+        });
     }
 };
 $(document).ready(function(){
     $("#menu a[data-page-name='"+pageName+"']").addClass("active");
     exp2.setStepTip(1);
+    //exp2.animated();
 
     $("#step1Ctrl").click(function(){
         $(".step1").remove();
@@ -93,7 +103,7 @@ $(document).ready(function(){
     });
     $("#step3Ctrl2").click(function(){
         $(".step3").remove();
-        $(".step4Image1,.step4Ctrl1,.step4Image2").removeClass("hidden");
+        $(".step4Image1,.step4Ctrl1,.step4Image2,.step4Image3").removeClass("hidden");
         exp2.setStepTip(4);
     });
 
@@ -104,8 +114,11 @@ $(document).ready(function(){
     });
     $("#step4Ctrl2").click(function(){
         $(this).remove();
-        $("#step4Ctrl3").removeClass("hidden");
-        $("#step4Image2").attr("src","images/exp2/step4/image2.gif?noCache="+new Date().getTime());
+        $("#step4Image2").animate({
+            top:240
+        },1000,function(){
+            $("#step4Ctrl3").removeClass("hidden");
+        });
     });
     $("#step4Ctrl3").click(function(){
         $(".step4").remove();
@@ -127,7 +140,7 @@ $(document).ready(function(){
 
     $("#step7Ctrl1").click(function(){
         $(this).remove();
-        if($("#step7Ctrl2").length==0){
+        if($("#step7Ctrl2,#step7Ctrl3").length==0){
             $(".step7").remove();
             $(".step8").removeClass("hidden");
             exp2.setStepTip(8);
@@ -135,7 +148,15 @@ $(document).ready(function(){
     });
     $("#step7Ctrl2").click(function(){
         $(this).remove();
-        if($("#step7Ctrl1").length==0){
+        if($("#step7Ctrl1,#step7Ctrl3").length==0){
+            $(".step7").remove();
+            $(".step8").removeClass("hidden");
+            exp2.setStepTip(8);
+        }
+    });
+    $("#step7Ctrl3").click(function(){
+        $(this).remove();
+        if($("#step7Ctrl1,#step7Ctrl2").length==0){
             $(".step7").remove();
             $(".step8").removeClass("hidden");
             exp2.setStepTip(8);
@@ -208,8 +229,9 @@ $(document).ready(function(){
     });
     $("#step15Ctrl2").click(function(){
         $(".step15").remove();
-        $(".step16").removeClass("hidden");
-        exp2.setStepTip(16);
+        $(".step17Image1").removeClass("hidden");
+        $(".step17Ctrl1").removeClass("hidden");
+        exp2.setStepTip(17);
     });
 
     $("#step16Ctrl").click(function(){
@@ -226,17 +248,12 @@ $(document).ready(function(){
     });
     $("#step17Ctrl2").click(function(){
         $(".step17").remove();
-        $(".step18Image1").removeClass("hidden");
-        $(".step18Ctrl1").removeClass("hidden");
-        exp2.setStepTip(18);
+        $(".step25Image1").removeClass("hidden");
+        $(".step25Ctrl1").removeClass("hidden");
+        exp2.setStepTip(25);
     });
 
-    $("#step18Ctrl1").click(function(){
-        $("#step18Image2").removeClass("hidden");
-        $(this).remove();
-        $("#step18Ctrl2").removeClass("hidden");
-    });
-    $("#step18Ctrl2").click(function(){
+    $("#step18Ctrl").click(function(){
         $(".step18").remove();
         $(".step19").removeClass("hidden");
         exp2.setStepTip(19);
@@ -318,11 +335,18 @@ $(document).ready(function(){
     $("#step25Ctrl1").click(function(){
         $("#step25Image2").removeClass("hidden");
         $(this).remove();
-        $("#step25Ctrl2").removeClass("hidden");
+        setTimeout(function(){
+            $(".step25Image3").removeClass("hidden");
+            $("#step25Image2").remove();
+            $(".step25Image1").remove();
+            $("#step25Ctrl2").removeClass("hidden");
+        },1000);
+
     });
     $("#step25Ctrl2").click(function(){
         $(".step25").remove();
-        $(".step26").removeClass("hidden");
+        $(".step18").removeClass("hidden");
+       /* $(".step26").removeClass("hidden");*/
         exp2.setStepTip(26);
     });
 

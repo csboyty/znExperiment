@@ -31,10 +31,20 @@ var exp1={
     },
     setStepTip:function(index){
         $("#stepTipContent").text(this.stepTips[index]);
+    },
+    animated:function(){
+        var me=this;
+        $(".animate").animate({
+            "opacity":0
+        },600,function(){
+            $(".animate").css("opacity",1);
+            me.animated();
+        });
     }
 };
 $(document).ready(function(){
     $("#menu a[data-page-name='"+pageName+"']").addClass("active");
+    exp1.animated();
     exp1.setStepTip(1);
 
     $("#step1Ctrl1").click(function(){
@@ -140,6 +150,7 @@ $(document).ready(function(){
     $("#step13Ctrl").click(function(){
         $(".step13").remove();
         $(".step14").removeClass("hidden");
+        $("#device").attr("src","images/exp1/device2.png");
         exp1.setStepTip(14);
     });
 
@@ -188,7 +199,7 @@ $(document).ready(function(){
     });
     $("#step22Ctrl").click(function(){
         $(".step22").remove();
-        $("#device").attr("src","images/exp1/device2.png");
+        $("#device").attr("src","images/exp1/device3.png");
         $(".step23").removeClass("hidden");
         exp1.setStepTip(23);
     });
@@ -203,8 +214,13 @@ $(document).ready(function(){
         exp1.setStepTip(25);
     });
     $("#step25Ctrl").click(function(){
-        $(".step25").remove();
-        $("#step26").attr("src","images/exp1/step26/computerContent.gif").removeClass("hidden");
+        $(".step25").not("#step25ComputerContent").remove();
+        $("#step25ComputerContent").attr("src","images/exp1/step25/computerContent.gif");
+        setTimeout(function(){
+            $("#step25ComputerContent").remove();
+            $(".step26").removeClass("hidden");
+            exp1.setStepTip(26);
+        },15000);
     });
 
     $("#restart").click(function(){

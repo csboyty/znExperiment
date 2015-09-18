@@ -24,7 +24,7 @@
         </div>
         <span id="restart" class="restart">重新开始</span>
         <div class="exp2">
-            <img class="step1 step1Image" src="images/exp2/step1/image.png">
+            <img class="step1 step1Image hidden" src="images/exp2/step1/image.png">
 
             <img class="step2 step2Image1 hidden" id="step2Image1" src="images/exp2/step2/image1.png">
             <img class="step2 step2Image2 hidden" id="step2Image2" src="images/exp2/step2/image2.png">
@@ -35,13 +35,15 @@
 
             <img class="step4 step4Image1 hidden" id="step4Image1" src="images/exp2/step4/image1.png">
             <img class="step4 step4Image2 hidden" id="step4Image2" src="images/exp2/step4/image2.png">
+            <img class="step4 step4Image3 hidden" id="step4Image3" src="images/exp2/step4/image3.png">
 
             <img class="step5 step5Image hidden" src="images/exp2/step5/image.png">
 
             <img class="step6 step6Image1 hidden"  src="images/exp2/step6/image1.png">
             <img class="step6 step6Image2 hidden"  src="images/exp2/step6/image2.png">
 
-            <img class="step7 step7Image hidden" src="images/exp2/step7/image.png">
+            <img class="step7 step7Image1 hidden" src="images/exp2/step7/image1.png">
+            <img class="step7 step7Image2 hidden" src="images/exp2/step7/image2.png">
 
             <img class="step8 step8Image hidden" src="images/exp2/step8/image.png">
 
@@ -50,10 +52,114 @@
             <img class="step10 step10Image hidden" src="images/exp2/step10/image.png">
 
             <img class="step11 step11Image hidden" src="images/exp2/step11/image.png">
+            <div class="step11 step11Controls controls hidden">
+                <div class="row">
+                    <label class="label">Type:</label>
+                    <select class="inputBox">
+                        <option></option>
+                        <option disabled>Cycliy</option>
+                        <option>Monotonic</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label class="label">Channel:</label>
+                    <select class="inputBox">
+                        <option></option>
+                        <option disabled>Confining</option>
+                        <option>Axial</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label class="label">Control Mode:</label>
+                    <select class="inputBox">
+                        <option></option>
+                        <option disabled>Disable</option>
+                        <option>Displacement</option>
+                        <option disabled>Strain A</option>
+                        <option disabled>Strain B</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label class="label">End Level Type:</label>
+                    <select class="inputBox">
+                        <option></option>
+                        <option disabled>Relative</option>
+                        <option>Absolute</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label class="label">Absolute End Level:</label>
+                    <input class="inputBox" type="text">
+                </div>
+                <div class="row">
+                    <select class="label">
+                        <option></option>
+                        <option disabled>Time</option>
+                        <option>Rate</option>
+                    </select>
+                    <input class="inputBox" type="text">
+                </div>
+            </div>
 
             <img class="step12 step12Image hidden" src="images/exp2/step12/image.png">
+            <div class="step12 tips hidden">Signals中的条目双击，自动生成在Signals Includeed中</div>
+            <div class="step12 step12Controls controls hidden" style="margin-top: 200px">
+                <div class="row">
+                    <label class="label">Type:</label>
+                    <select class="inputBox">
+                        <option></option>
+                        <option disabled>Disabled</option>
+                        <option>Timed</option>
+                        <option disabled>Peak/Valley</option>
+                        <option disabled>Level Crossing</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <select class="label">
+                        <option></option>
+                        <option disabled>Time Between Points</option>
+                        <option>Sample Rate</option>
+                    </select>
+                    <input class="inputBox" type="text">
+                </div>
+                <div class="row">
+                    <label class="label">Buffer Size:</label>
+                    <input class="inputBox" type="text">
+                </div>
+            </div>
 
             <img class="step13 step13Image hidden" src="images/exp2/step13/image.png">
+            <div class="step13 step12Controls controls hidden" style="margin-top: 200px">
+                <div class="row">
+                    <label class="label">Destination File:</label>
+                    <select class="inputBox">
+                        <option></option>
+                        <option disabled>Test Default</option>
+                        <option>User Specified</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label class="label">File Name:</label>
+                    <input class="inputBox" type="text">
+                </div>
+                <div class="row">
+                    <label class="label">Data File Mode:</label>
+                    <select class="inputBox">
+                        <option></option>
+                        <option disabled>Overwrite</option>
+                        <option>Append</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label class="label">Data File Format:</label>
+                    <select class="inputBox">
+                        <option></option>
+                        <option disabled>Plain</option>
+                        <option disabled>Lotus</option>
+                        <option>Excel</option>
+                    </select>
+                </div>
+            </div>
 
             <img class="step14 step14Image1 hidden"  src="images/exp2/step14/image1.png">
             <img class="step14 step14Image2 hidden" id="step14Image2"  src="images/exp2/step14/image2.png">
@@ -66,15 +172,46 @@
             <img class="step17 step17Image1 hidden"  src="images/exp2/step17/image1.png">
             <img class="step17 step17Image2 hidden" id="step17Image2"  src="images/exp2/step17/image2.png">
 
-            <img class="step18 step18Image1 hidden"  src="images/exp2/step18/image1.png">
-            <img class="step18 step18Image2 hidden" id="step18Image2"  src="images/exp2/step18/image2.png">
+
+            <img class="step18 step18Image hidden" id="step18Image"  src="images/exp2/step18/image.png">
 
             <img class="step19 step19Image1 hidden"  src="images/exp2/step19/image1.png">
             <img class="step19 step19Image2 hidden"  src="images/exp2/step19/image2.png">
 
-            <img class="step20 step20Image1 hidden" id="step20Image1"  src="images/exp2/step20/image1.png">
-            <img class="step20 step20Image2 hidden"  src="images/exp2/step20/image2.png">
-            <div class="step20 tips hidden">已无缝隙，电脑交互，施加预载;围压油仓是满的</div>
+            <div class="step20 tips ">通过滑轴控制仪器闭合，当此处的间隙只有2-3mm时，停止</div>
+            <img class="step20 step20Image1 " id="step20Image1"  src="images/exp2/step20/image1.png">
+            <div class="step20 step20Controls controls " style="margin-top: 200px">
+                <div class="row">
+                    <label class="label">Destination File:</label>
+                    <select class="inputBox">
+                        <option></option>
+                        <option disabled>Test Default</option>
+                        <option>User Specified</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label class="label">File Name:</label>
+                    <input class="inputBox" type="text">
+                </div>
+                <div class="row">
+                    <label class="label">Data File Mode:</label>
+                    <select class="inputBox">
+                        <option></option>
+                        <option disabled>Overwrite</option>
+                        <option>Append</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label class="label">Data File Format:</label>
+                    <select class="inputBox">
+                        <option></option>
+                        <option disabled>Plain</option>
+                        <option disabled>Lotus</option>
+                        <option>Excel</option>
+                    </select>
+                </div>
+            </div>
+
 
             <img class="step21 step21Image hidden" id="step21Image"  src="images/exp2/step21/image.png">
 
@@ -91,6 +228,7 @@
 
             <img class="step25 step25Image1 hidden"  src="images/exp2/step25/image1.png">
             <img class="step25 step25Image2 hidden" id="step25Image2"  src="images/exp2/step25/image2.png">
+            <img class="step25 step25Image3 hidden" id="step25Image3"  src="images/exp2/step25/image3.png">
 
             <img class="step26 step26Image hidden" id="step26Image"  src="images/exp2/step26/image.png">
 
@@ -103,89 +241,91 @@
 
             <img class="step30 step30Image hidden" id="step30Image" src="images/exp2/step30/image.png">
 
-            <div class="step1 step1Ctrl ctrl" id="step1Ctrl">进入下一步</div>
+            <div class="step1 step1Ctrl ctrl animate hidden" id="step1Ctrl">进入下一步</div>
 
-            <div class="step2 step2Ctrl1 ctrl hidden" id="step2Ctrl1"></div>
-            <div class="step2 step2Ctrl2 ctrl hidden" id="step2Ctrl2"></div>
-            <div class="step2 step2Ctrl3 ctrl hidden" id="step2Ctrl3"></div>
-            <div class="step2 step2Ctrl4 ctrl hidden" id="step2Ctrl4"></div>
-            <div class="step2 step2Ctrl5 ctrl hidden" id="step2Ctrl5">进入下一步</div>
+            <div class="step2 step2Ctrl1 ctrl hidden animate animate1" id="step2Ctrl1"></div>
+            <div class="step2 step2Ctrl2 ctrl hidden animate animate1" id="step2Ctrl2"></div>
+            <div class="step2 step2Ctrl3 ctrl hidden animate animate1" id="step2Ctrl3"></div>
+            <div class="step2 step2Ctrl4 ctrl hidden animate animate1" id="step2Ctrl4"></div>
+            <div class="step2 step2Ctrl5 ctrl hidden animate" id="step2Ctrl5">进入下一步</div>
 
-            <div class="step3 step3Ctrl1 ctrl hidden" id="step3Ctrl1"></div>
-            <div class="step3 step3Ctrl2 ctrl hidden" id="step3Ctrl2">进入下一步</div>
+            <div class="step3 step3Ctrl1 ctrl hidden animate animate1" id="step3Ctrl1"></div>
+            <div class="step3 step3Ctrl2 ctrl hidden animate" id="step3Ctrl2">进入下一步</div>
 
-            <div class="step4 step4Ctrl1 ctrl hidden" id="step4Ctrl1"></div>
-            <div class="step4 step4Ctrl2 ctrl hidden" id="step4Ctrl2"></div>
-            <div class="step4 step4Ctrl3 ctrl hidden" id="step4Ctrl3">进入下一步</div>
+            <div class="step4 step4Ctrl1 ctrl hidden animate animate1" id="step4Ctrl1"></div>
+            <div class="step4 step4Ctrl2 ctrl hidden animate animate1" id="step4Ctrl2"></div>
+            <div class="step4 step4Ctrl3 ctrl hidden animate" id="step4Ctrl3">进入下一步</div>
 
-            <div class="step5 step5Ctrl ctrl hidden" id="step5Ctrl">进入下一步</div>
+            <div class="step5 step5Ctrl ctrl hidden animate" id="step5Ctrl">进入下一步</div>
 
-            <div class="step6 step6Ctrl ctrl hidden" id="step6Ctrl"></div>
+            <div class="step6 step6Ctrl ctrl hidden animate animate1" id="step6Ctrl"></div>
 
-            <div class="ctrl step7Ctrl1 step7 hidden" id="step7Ctrl1"></div>
-            <div class="ctrl step7Ctrl2 step7 hidden" id="step7Ctrl2"></div>
+            <div class="ctrl step7Ctrl1 step7 hidden animate animate1" id="step7Ctrl1"></div>
+            <div class="ctrl step7Ctrl2 step7 hidden animate animate1" id="step7Ctrl2"></div>
+            <div class="ctrl step7Ctrl3 step7 hidden animate animate1" id="step7Ctrl3"></div>
 
-            <div class="step8 step8Ctrl ctrl hidden" id="step8Ctrl"></div>
 
-            <div class="step9 step9Ctrl ctrl hidden" id="step9Ctrl"></div>
+            <div class="step8 step8Ctrl ctrl hidden animate animate1" id="step8Ctrl"></div>
 
-            <div class="step10 step10Ctrl ctrl hidden" id="step10Ctrl"></div>
+            <div class="step9 step9Ctrl ctrl hidden animate" id="step9Ctrl"></div>
 
-            <div class="step11 step11Ctrl ctrl hidden" id="step11Ctrl"></div>
+            <div class="step10 step10Ctrl ctrl hidden animate animate1" id="step10Ctrl"></div>
 
-            <div class="ctrl step12Ctrl1 step12 hidden" id="step12Ctrl1"></div>
-            <div class="ctrl step12Ctrl2 step12 hidden" id="step12Ctrl2"></div>
+            <div class="step11 step11Ctrl ctrl hidden animate animate1" id="step11Ctrl"></div>
 
-            <div class="step13 step13Ctrl ctrl hidden" id="step13Ctrl">进入下一步</div>
+            <div class="ctrl step12Ctrl step12 hidden animate" id="step12Ctrl1"></div>
 
-            <div class="step14 step14Ctrl1 ctrl hidden" id="step14Ctrl1"></div>
-            <div class="step14 step14Ctrl2 ctrl hidden" id="step14Ctrl2">进入下一步</div>
+            <div class="step13 step13Ctrl ctrl hidden animate" id="step13Ctrl">进入下一步</div>
 
-            <div class="step15 step15Ctrl1 ctrl hidden" id="step15Ctrl1"></div>
-            <div class="step15 step15Ctrl2 ctrl hidden" id="step15Ctrl2">进入下一步</div>
+            <div class="step14 step14Ctrl1 ctrl hidden animate" id="step14Ctrl1"></div>
+            <div class="step14 step14Ctrl2 ctrl hidden animate" id="step14Ctrl2">进入下一步</div>
 
-            <div class="step16 step16Ctrl ctrl hidden" id="step16Ctrl"></div>
+            <div class="step15 step15Ctrl1 ctrl hidden animate" id="step15Ctrl1"></div>
+            <div class="step15 step15Ctrl2 ctrl hidden animate" id="step15Ctrl2">进入下一步</div>
 
-            <div class="step17 step17Ctrl1 ctrl hidden" id="step17Ctrl1"></div>
-            <div class="step17 step17Ctrl2 ctrl hidden" id="step17Ctrl2">进入下一步</div>
+            <div class="step16 step16Ctrl ctrl hidden animate" id="step16Ctrl"></div>
 
-            <div class="step18 step18Ctrl1 ctrl hidden" id="step18Ctrl1"></div>
-            <div class="step18 step18Ctrl2 ctrl hidden" id="step18Ctrl2"></div>
+            <div class="step17 step17Ctrl1 ctrl hidden animate" id="step17Ctrl1"></div>
+            <div class="step17 step17Ctrl2 ctrl hidden animate" id="step17Ctrl2">进入下一步</div>
 
-            <div class="step19 step19Ctrl1 ctrl hidden" id="step19Ctrl1"></div>
-            <div class="step19 step19Ctrl2 ctrl hidden" id="step19Ctrl2"></div>
+            <div class="step18 step18Ctrl ctrl hidden animate" id="step18Ctrl"></div>
 
-            <div class="step20 step20Ctrl1 ctrl hidden" id="step20Ctrl1"></div>
-            <div class="step20 step20Ctrl2 ctrl hidden" id="step20Ctrl2">进入下一步</div>
 
-            <div class="step21 step21Ctrl1 ctrl hidden" id="step21Ctrl1"></div>
-            <div class="step21 step21Ctrl2 ctrl hidden" id="step21Ctrl2">进入下一步</div>
+            <div class="step19 step19Ctrl1 ctrl hidden animate" id="step19Ctrl1"></div>
+            <div class="step19 step19Ctrl2 ctrl hidden animate" id="step19Ctrl2"></div>
 
-            <div class="step22 step22Ctrl1 ctrl hidden" id="step22Ctrl1"></div>
-            <div class="step22 step22Ctrl2 ctrl hidden" id="step22Ctrl2">进入下一步</div>
+            <div class="step20 step20Ctrl1 ctrl hidden animate" id="step20Ctrl1"></div>
+            <div class="step20 step20Ctrl2 ctrl hidden animate" id="step20Ctrl2">进入下一步</div>
 
-            <div class="step23 step23Ctrl1 ctrl hidden" id="step23Ctrl1"></div>
-            <div class="step23 step23Ctrl2 ctrl hidden" id="step23Ctrl2"></div>
+            <div class="step21 step21Ctrl1 ctrl hidden animate" id="step21Ctrl1"></div>
+            <div class="step21 step21Ctrl2 ctrl hidden animate" id="step21Ctrl2">进入下一步</div>
 
-            <div class="step24 step24Ctrl1 ctrl hidden" id="step24Ctrl1"></div>
-            <div class="step24 step24Ctrl2 ctrl hidden" id="step24Ctrl2"></div>
+            <div class="step22 step22Ctrl1 ctrl hidden animate" id="step22Ctrl1"></div>
+            <div class="step22 step22Ctrl2 ctrl hidden animate" id="step22Ctrl2">进入下一步</div>
 
-            <div class="step25 step25Ctrl1 ctrl hidden" id="step25Ctrl1"></div>
-            <div class="step25 step25Ctrl2 ctrl hidden" id="step25Ctrl2">进入下一步</div>
+            <div class="step23 step23Ctrl1 ctrl hidden animate" id="step23Ctrl1"></div>
+            <div class="step23 step23Ctrl2 ctrl hidden animate" id="step23Ctrl2"></div>
 
-            <div class="step26 step26Ctrl step26Ctrl1 ctrl hidden" id="step26Ctrl1"></div>
-            <div class="step26 step26Ctrl step26Ctrl2 ctrl hidden" id="step26Ctrl2"></div>
-            <div class="step26 step26Ctrl step26Ctrl3 ctrl hidden" id="step26Ctrl3"></div>
-            <div class="step26 step26Ctrl step26Ctrl4 ctrl hidden" id="step26Ctrl4"></div>
+            <div class="step24 step24Ctrl1 ctrl hidden animate" id="step24Ctrl1"></div>
+            <div class="step24 step24Ctrl2 ctrl hidden animate" id="step24Ctrl2"></div>
 
-            <div class="step27 step27Ctrl1 ctrl hidden" id="step27Ctrl1"></div>
-            <div class="step27 step27Ctrl2 ctrl hidden" id="step27Ctrl2"></div>
+            <div class="step25 step25Ctrl1 ctrl hidden animate" id="step25Ctrl1"></div>
+            <div class="step25 step25Ctrl2 ctrl hidden animate" id="step25Ctrl2">进入下一步</div>
 
-            <div class="step28 step28Ctrl ctrl hidden" id="step28Ctrl">进入下一步</div>
 
-            <div class="step29 step29Ctrl ctrl hidden" id="step29Ctrl">进入下一步</div>
+            <div class="step26 step26Ctrl step26Ctrl1 ctrl hidden animate" id="step26Ctrl1"></div>
+            <div class="step26 step26Ctrl step26Ctrl2 ctrl hidden animate" id="step26Ctrl2"></div>
+            <div class="step26 step26Ctrl step26Ctrl3 ctrl hidden animate" id="step26Ctrl3"></div>
+            <div class="step26 step26Ctrl step26Ctrl4 ctrl hidden animate" id="step26Ctrl4"></div>
 
-            <div class="step30 step30Ctrl ctrl hidden" id="step30Ctrl"></div>
+            <div class="step27 step27Ctrl1 ctrl hidden animate" id="step27Ctrl1"></div>
+            <div class="step27 step27Ctrl2 ctrl hidden animate" id="step27Ctrl2"></div>
+
+            <div class="step28 step28Ctrl ctrl hidden animate" id="step28Ctrl">进入下一步</div>
+
+            <div class="step29 step29Ctrl ctrl hidden animate" id="step29Ctrl">进入下一步</div>
+
+            <div class="step30 step30Ctrl ctrl hidden animate" id="step30Ctrl"></div>
 
         </div>
     </div>
