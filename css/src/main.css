@@ -64,7 +64,7 @@ li{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    color: red;
+    color: blue;
 }
 /*
 *header
@@ -479,6 +479,7 @@ li{
 .exp2 .tips{
     text-align: center;
     color: red;
+    font-size: 18px;
 }
 .exp2 .step1Image{
     width: 626px;
@@ -650,7 +651,7 @@ li{
     /*background: url(../../images/exp2/step1/ctrl.gif) no-repeat;*/
 }
 .exp2 .step6Image1{
-    width: 395px;
+    width: 600px;
     height: auto;
     position: absolute;
     left:52px;
@@ -777,7 +778,7 @@ li{
     margin-left:10px;
     margin-top: 10px;
     position: absolute;
-    top:70px;
+    top:100px;
     left:0px;
 }
 .exp2 .step12Controls{
@@ -789,7 +790,7 @@ li{
     width: 100px;
     height: 36px;
     left: 290px;
-    top: 155px;
+    top: 185px;
     /*background: url(../../images/exp2/step12/ctrl1.gif) no-repeat;*/
 }
 .exp2 .step13Image{
@@ -802,7 +803,7 @@ li{
     top:70px;
     left:0px;
 }
-.exp2 .step12Controls{
+.exp2 .step13Controls{
     margin-left: 545px;
     padding-top: 20px;
 }
@@ -880,20 +881,52 @@ li{
     line-height: 35px;
     /*background: url(../../images/exp2/step1/ctrl.gif) no-repeat;*/
 }
-.exp2 .step16Ctrl{
+/*.exp2 .step16Ctrl{
     position: absolute;
     left: 725px;
     top: 195px;
     width: 150px;
     height: 32px;
-    /*background: url(../../images/exp2/step16/ctrl.gif) no-repeat;*/
-}
-.exp2 .step16Image{
+    *//*background: url(../../images/exp2/step16/ctrl.gif) no-repeat;*//*
+}*/
+/*.exp2 .step16Image{
     width: 803px;
     margin: auto;
     display: block;
-}
+}*/
 
+.exp2 .step16Image1{
+    width: 539px;
+    height: auto;
+    position: absolute;
+    left:50px;
+    top:100px;
+}
+.exp2 .step16Image2{
+    width: 319px;
+    height: auto;
+    position: absolute;
+    left:650px;
+    top:200px;
+}
+.exp2 .step16Ctrl1{
+    position: absolute;
+    left: 485px;
+    top: 168px;
+    width: 36px;
+    height: 36px;
+    /*background: url(../../images/exp2/step17/ctrl.gif) no-repeat;*/
+}
+.exp2 .step16Ctrl2{
+    position: absolute;
+    left:60%;
+    top:15px;
+    width: 141px;
+    height:35px;
+    padding-left: 10px;
+    line-height: 35px;
+    /*background: url(../../images/exp2/step1/ctrl.gif) no-repeat;*/
+}
 .exp2 .step17Image1{
     width: 539px;
     height: auto;
@@ -908,13 +941,18 @@ li{
     left:650px;
     top:200px;
 }
+.exp2 .step17Image3{
+    max-width:100% ;
+    margin:50px auto;
+    display: block;
+}
 .exp2 .step17Ctrl1{
     position: absolute;
-    left: 485px;
+    left: 405px;
     top: 168px;
     width: 36px;
     height: 36px;
-    /*background: url(../../images/exp2/step17/ctrl.gif) no-repeat;*/
+    /*background: url(../../images/exp2/step25/ctrl.gif) no-repeat;*/
 }
 .exp2 .step17Ctrl2{
     position: absolute;
@@ -924,61 +962,72 @@ li{
     height:35px;
     padding-left: 10px;
     line-height: 35px;
-    /*background: url(../../images/exp2/step1/ctrl.gif) no-repeat;*/
 }
 
-.exp2 .step18Image{
+.exp2 .step18Image1{
     max-width: 100%;
     height: auto;
     display: block;
     margin: auto;
 }
-.exp2 .step18Ctrl{
+.exp2 .step18Ctrl1{
     position: absolute;
     left: 528px;
     top: 208px;
     width: 30px;
     height: 30px;
-    /*background: url(../../images/exp2/step18/ctrl.gif) no-repeat;*/
+}
+.exp2 .step18Ctrl2{
+    position: absolute;
+    left:60%;
+    top:15px;
+    width: 141px;
+    height:35px;
+    padding-left: 10px;
+    line-height: 35px;
 }
 .exp2 .step19Image1{
-    width: 300px;
-    height: auto;
     position: absolute;
-    left:150px;
-    top:200px;
-}
-.exp2 .step19Image2{
-    width: 319px;
-    height: auto;
-    position: absolute;
-    left:650px;
-    top:200px;
+    left:250px;
+    top:50px;
 }
 .exp2 .step19Ctrl1{
     position: absolute;
-    left: 393px;
-    top: 398px;
-    width: 40px;
-    height: 38px;
-    /*background: url(../../images/exp2/step19/ctrl1.gif) no-repeat;*/
+    left: 690px;
+    top: 435px;
+    width: 35px;
+    height: 35px;
 }
 .exp2 .step19Ctrl2{
     position: absolute;
-    left: 655px;
-    top: 550px;
-    width: 36px;
-    height: 36px;
-    padding-left: 10px;
-    line-height: 35px;
-    /*background: url(../../images/exp2/step19/ctrl2.gif) no-repeat;*/
+    left: 725px;
+    top: 435px;
+    width: 35px;
+    height: 35px;
+}
+.exp2 .step19Ctrl3{
+    position: absolute;
+    left: 690px;
+    top: 460px;
+    width: 35px;
+    height: 35px;
+}
+.exp2 .step19Ctrl4{
+    position: absolute;
+    left: 690px;
+    top: 485px;
+    width: 35px;
+    height: 35px;
 }
 .exp2 .step20Image1{
-    width: 528px;
-    height: auto;
     position: absolute;
     left:50px;
     top:100px;
+    width: 300px;
+}
+.exp2 .step20Controls{
+    margin-top: 430px;
+    display: inline-block;
 }
 .exp2 .step20Image2{
     width: 319px;
@@ -987,13 +1036,56 @@ li{
     left:650px;
     top:200px;
 }
+.exp2 .step20Controls .sliderContainer{
+    position: relative;
+    display: inline-block;
+    margin-left: 40px;
+}
+.exp2 .step20Controls .sliderContainer .bg{
+    width: 347px;
+    height: 40px;
+    background: url(../../images/exp2/step20/image3.jpg) no-repeat;
+}
+.exp2 .step20Controls .sliderContainer .slider{
+    width: 21px;
+    height: 23px;
+    position: absolute;
+    top:2px;
+    left:15px;
+    background: url(../../images/exp2/step20/image4.png) no-repeat;
+    cursor: pointer;
+    font-size: 0px;
+}
+.exp2 .step20Controls .sliderContainer .slider.error{
+    border: 2px solid red;
+    font-size: 24px;
+    color: red;
+    line-height: 23px;
+    text-align: center;
+}
+.exp2 .step20AnimateContainer{
+    position: absolute;
+    left:480px;
+    top: 100px;
+    overflow:hidden;
+}
+.exp2 .step20AnimateContainer .image2{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    z-index: 100;
+}
+.exp2 .step20AnimateContainer .image3{
+    position: absolute;
+    bottom:-100px;
+    left:120px;
+}
 .exp2 .step20Ctrl1{
     position: absolute;
-    left: 278px;
-    top: 188px;
-    width: 128px;
-    height:98px;
-    /*background: url(../../images/exp2/step20/ctrl.gif) no-repeat;*/
+    left: 58px;
+    top: 452px;
+    width: 20px;
+    height: 20px;
 }
 .exp2 .step20Ctrl2{
     position: absolute;
@@ -1005,20 +1097,77 @@ li{
     line-height: 35px;
     /*background: url(../../images/exp2/step1/ctrl.gif) no-repeat;*/
 }
-.exp2 .step21Image{
-    width: 528px;
-    display: block;
-    margin: auto;
+.exp2 .step21.tips{
+    position: absolute;
+    left: 600px;
+    text-align: left;
+    top: 100px;
+}
+.exp2 .step21AnimateContainer{
+    position: absolute;
+    left:180px;
+    top: 100px;
+    overflow:hidden;
+    height: 500px;
+    width: 400px;
+}
+.exp2 .step21AnimateContainer .image1{
+    position: absolute;
+    top:-240px;
+    left:36px;
+    z-index: 100;
+}
+.exp2 .step21AnimateContainer .image2{
+    position: absolute;
+    bottom:25px;
+    left:120px;
+}
+.exp2 .step21AnimateContainer .image3{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    z-index: 101;
+}
+.exp2 .step21Image4{
+    width: 200px;
+    position: absolute;
+    left: 500px;
+    top:250px;
+}
+.exp2 .step21Image5{
+    width: 200px;
+    position: absolute;
+    left: 750px;
+    top:250px;
+}
+.exp2 .step21Image6{
+    width: 200px;
+    position: absolute;
+    left: 550px;
+    top:450px;
 }
 .exp2 .step21Ctrl1{
     position: absolute;
-    left: 475px;
-    top: 388px;
+    left: 555px;
+    top: 308px;
     width: 81px;
-    height:61px;
-    /*background: url(../../images/exp2/step21/ctrl.gif) no-repeat;*/
+    height: 61px;
 }
 .exp2 .step21Ctrl2{
+    position: absolute;
+    left: 810px;
+    top: 268px;
+    width: 81px;
+    height: 61px;
+}
+.exp2 .step21Ctrl3{
+    position: absolute;
+    left: 565px;
+    top: 480px;
+    width: 81px;
+    height: 61px;
+}
+.exp2 .step21Ctrl4{
     position: absolute;
     left:60%;
     top:15px;
@@ -1026,16 +1175,13 @@ li{
     height:35px;
     padding-left: 10px;
     line-height: 35px;
-    /*background: url(../../images/exp2/step1/ctrl.gif) no-repeat;*/
 }
-
-
 .exp2 .step22Image1{
     width: 396px;
     height: auto;
     position: absolute;
     left:50px;
-    top:150px;
+    top:130px;
 }
 .exp2 .step22Image2{
     width: 559px;
@@ -1046,13 +1192,54 @@ li{
 }
 .exp2 .step22Ctrl1{
     position: absolute;
-    left: 130px;
-    top: 368px;
-    width: 128px;
-    height:98px;
-    /*background: url(../../images/exp2/step20/ctrl.gif) no-repeat;*/
+    left: 250px;
+    top: 160px;
+    width: 90px;
+    height: 90px;
 }
 .exp2 .step22Ctrl2{
+    position: absolute;
+    left: 340px;
+    top: 160px;
+    width: 90px;
+    height: 90px;
+}
+.exp2 .step22Ctrl3{
+    position: absolute;
+    left: 60px;
+    top: 160px;
+    width: 90px;
+    height: 90px;
+}
+.exp2 .step22Ctrl4{
+    position: absolute;
+    left: 150px;
+    top: 300px;
+    width: 90px;
+    height: 90px;
+}
+.exp2 .step22Ctrl5{
+    position: absolute;
+    left: 160px;
+    top: 200px;
+    width: 90px;
+    height: 90px;
+}
+.exp2 .step22Ctrl6{
+    position: absolute;
+    left: 220px;
+    top: 260px;
+    width: 90px;
+    height: 90px;
+}
+.exp2 .step22Ctrl7{
+    position: absolute;
+    left: 260px;
+    top: 330px;
+    width: 90px;
+    height: 90px;
+}
+.exp2 .step22Ctrl8{
     position: absolute;
     left:60%;
     top:15px;
@@ -1060,103 +1247,118 @@ li{
     height:35px;
     padding-left: 10px;
     line-height: 35px;
-    /*background: url(../../images/exp2/step1/ctrl.gif) no-repeat;*/
 }
 
 .exp2 .step23Image1{
-    width: 469px;
-    height: auto;
-    position: absolute;
-    left:50px;
-    top:100px;
-}
-.exp2 .step23Image2{
     width: 396px;
     height: auto;
     position: absolute;
+    left:50px;
+    top:150px;
+}
+.exp2 .step23Image2{
+    height: auto;
+    position: absolute;
     left:550px;
-    top:100px;
+    top:150px;
 }
 .exp2 .step23Ctrl1{
     position: absolute;
-    left: 100px;
-    top: 398px;
-    width: 268px;
-    height:48px;
-    /*background: url(../../images/exp2/step23/ctrl1.gif) no-repeat;*/
+    left: 50px;
+    top: 178px;
+
+    width: 128px;
+    height:98px;
 }
 .exp2 .step23Ctrl2{
     position: absolute;
-    left: 625px;
-    top: 310px;
-    width: 81px;
-    height:61px;
+    left: 240px;
+    top: 338px;
+    width: 128px;
+    height:98px;
+}
+.exp2 .step23Ctrl3{
+    position: absolute;
+    left:60%;
+    top:15px;
+    width: 141px;
+    height:35px;
     padding-left: 10px;
     line-height: 35px;
-    /*background: url(../../images/exp2/step23/ctrl2.gif) no-repeat;*/
 }
 
 .exp2 .step24Image1{
-    width: 539px;
+    width: 350px;
     height: auto;
     position: absolute;
     left:50px;
     top:100px;
 }
 .exp2 .step24Image2{
-    width: 319px;
+    width: 500px;
     height: auto;
     position: absolute;
-    left:650px;
-    top:200px;
+    left:450px;
+    top:100px;
 }
 .exp2 .step24Ctrl1{
     position: absolute;
-    left: 378px;
-    top: 168px;
-    width: 36px;
-    height: 36px;
-    /*background: url(../../images/exp2/step24/ctrl.gif) no-repeat;*/
+    left: 818px;
+    top: 148px;
+    width: 90px;
+    height: 90px;
 }
 .exp2 .step24Ctrl2{
     position: absolute;
-    left: 820px;
-    top: 345px;
+    left:60%;
+    top:15px;
     width: 141px;
     height:35px;
     padding-left: 10px;
     line-height: 35px;
-    /*background: url(../../images/exp2/step24/ctrl.gif) no-repeat;*/
 }
 
 .exp2 .step25Image1{
-    width: 539px;
+    width: 500px;
     height: auto;
     position: absolute;
     left:50px;
     top:100px;
 }
-.exp2 .step25Image2{
-    width: 319px;
-    height: auto;
-    position: absolute;
-    left:650px;
-    top:200px;
-}
-.exp2 .step25Image3{
-    max-width:100% ;
-    margin:50px auto;
-    display: block;
+.exp2 .step25Controls{
+    margin-left: 550px;
 }
 .exp2 .step25Ctrl1{
     position: absolute;
-    left: 405px;
-    top: 168px;
-    width: 36px;
-    height: 36px;
-    /*background: url(../../images/exp2/step25/ctrl.gif) no-repeat;*/
+    left:60%;
+    top:15px;
+    width: 141px;
+    height:35px;
+    padding-left: 10px;
+    line-height: 35px;
 }
-.exp2 .step25Ctrl2{
+
+
+.exp2 .step26Image1{
+    width: 500px;
+    position: absolute;
+    left:50px;
+    top:100px;
+}
+.exp2 .step26Image2{
+    position: absolute;
+    width: 300px;
+    left:600px;
+    top: 100px;
+}
+.exp2 .step26Ctrl1{
+    position: absolute;
+    left: 763px;
+    top: 178px;
+    width: 30px;
+    height: 30px;
+}
+.exp2 .step26Ctrl2{
     position: absolute;
     left:60%;
     top:15px;
@@ -1164,72 +1366,16 @@ li{
     height:35px;
     padding-left: 10px;
     line-height: 35px;
-    /*background: url(../../images/exp2/step1/ctrl.gif) no-repeat;*/
-}
-
-.exp2 .step26Image{
-    width: 900px;
-    display: block;
-    margin: auto;
-}
-.exp2 .step26Ctrl{
-    position: absolute;
-    left: 250px;
-    top: 220px;
-    width: 148px;
-    height: 48px;
-    /*background: url(../../images/exp2/step26/ctrl.gif) no-repeat;*/
-}
-.exp2 .step26Ctrl2{
-    left:250px;
-    top:320px;
-}
-.exp2 .step26Ctrl3{
-    left:610px;
-    top: 220px;
-}
-.exp2 .step26Ctrl4{
-    left:610px;
-    top:320px;
 }
 
 .exp2 .step27Image1{
-    width: 216px;
+    width: 600px;
     height: auto;
     position: absolute;
     left:150px;
-    top:100px;
-}
-.exp2 .step27Image2{
-    width: 167px;
-    height: auto;
-    position: absolute;
-    left:650px;
-    top:100px;
+    top:60px;
 }
 .exp2 .step27Ctrl1{
-    position: absolute;
-    left: 150px;
-    top: 198px;
-    width: 57px;
-    height: 57px;
-    /*background: url(../../images/exp2/step27/ctrl.gif) no-repeat;*/
-}
-.exp2 .step27Ctrl2{
-    position: absolute;
-    left: 645px;
-    top: 115px;
-    width: 57px;
-    height:57px;
-    /*background: url(../../images/exp2/step27/ctrl.gif) no-repeat;*/
-}
-
-.exp2 .step28Image{
-    width: 424px;
-    display: block;
-    margin: auto;
-}
-.exp2 .step28Ctrl{
     position: absolute;
     left:60%;
     top:15px;
@@ -1237,12 +1383,53 @@ li{
     height:35px;
     padding-left: 10px;
     line-height: 35px;
-    /*background: url(../../images/exp2/step1/ctrl.gif) no-repeat;*/
+}
+
+
+.exp2 .step28Image1{
+    width: 600px;
+    display: block;
+    margin:50px auto 0px 20px;
+}
+.exp2 .step28Image2{
+    width: 200px;
+    position: absolute;
+    left:700px;
+    top:110px;
+}
+.exp2 .step28Image3{
+    width: 300px;
+    position: absolute;
+    left:700px;
+    top:200px;
+}
+.exp2 .step28Ctrl1{
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    left: 705px;
+    top: 135px;
+}
+.exp2 .step28Ctrl2{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 705px;
+    top: 355px;
+}
+.exp2 .step28Ctrl3{
+    position: absolute;
+    left:60%;
+    top:15px;
+    width: 141px;
+    height:35px;
+    padding-left: 10px;
+    line-height: 35px;
 }
 .exp2 .step29Image{
-    width: 854px;
+    width: 450px;
     display: block;
-    margin: auto;
+    margin: 50px auto 0px auto;
 }
 .exp2 .step29Ctrl{
     position: absolute;
@@ -1252,20 +1439,271 @@ li{
     height:35px;
     padding-left: 10px;
     line-height: 35px;
-    /*background: url(../../images/exp2/step1/ctrl.gif) no-repeat;*/
 }
 .exp2 .step30Image{
-    width: 528px;
+    width: 330px;
     display: block;
-    margin: auto;
+    margin: 50px auto 0px auto;
 }
-.exp2 .step30Ctrl{
+.exp2 .step30Ctrl1{
     position: absolute;
-    left: 470px;
-    top: 570px;
-    /*background: url(../../images/exp2/step30/ctrl.gif) no-repeat;*/
+    width: 60px;
+    height: 40px;
+    left: 335px;
+    top: 275px;
+}
+.exp2 .step30Ctrl2{
+    position: absolute;
+    left:60%;
+    top:15px;
+    width: 141px;
+    height:35px;
+    padding-left: 10px;
+    line-height: 35px;
+}
+
+.exp2 .step31Image1{
+    width: 600px;
+    display: block;
+    margin: 30px auto 0px 20px;
+}
+.exp2 .step31Image2{
+     width: 350px;
+     display: block;
+    position: absolute;
+    left:640px;
+    top:100px;
+}
+.exp2 .step31Ctrl1{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 75px;
+    top: 185px;
+}
+.exp2 .step31Ctrl2{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 355px;
+    top: 185px;
+}
+.exp2 .step31Ctrl3{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 480px;
+    top: 185px;
+}
+.exp2 .step31Ctrl4{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 205px;
+    top: 260px;
+}
+.exp2 .step31Ctrl5{
+    position: absolute;
+    left:60%;
+    top:15px;
+    width: 141px;
+    height:35px;
+    padding-left: 10px;
+    line-height: 35px;
+}
+
+.exp2 .step32Image{
+    width: 600px;
+    display: block;
+    margin: 30px auto 0px auto;
+}
+.exp2 .step32Ctrl1{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 255px;
+    top: 185px;
+}
+.exp2 .step32Ctrl2{
+     position: absolute;
+     left:60%;
+     top:15px;
+     width: 141px;
+     height:35px;
+     padding-left: 10px;
+     line-height: 35px;
+ }
+
+.exp2 .step33.tips{
+    position: absolute;
+    left: 600px;
+    text-align: left;
+    top: 100px;
+}
+.exp2 .step33AnimateContainer{
+    position: absolute;
+    left:180px;
+    top: 100px;
+    overflow:hidden;
+    height: 500px;
+    width: 400px;
+}
+.exp2 .step33AnimateContainer .image1{
+    position: absolute;
+    top:40px;
+    left:36px;
+    z-index: 100;
+}
+.exp2 .step33AnimateContainer .image2{
+    position: absolute;
+    bottom:25px;
+    left:120px;
+}
+.exp2 .step33AnimateContainer .image3{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    z-index: 101;
+}
+.exp2 .step33Image4{
+    width: 200px;
+    position: absolute;
+    left: 500px;
+    top:250px;
+}
+.exp2 .step33Image5{
+    width: 200px;
+    position: absolute;
+    left: 750px;
+    top:250px;
+}
+.exp2 .step33Image6{
+    width: 200px;
+    position: absolute;
+    left: 550px;
+    top:450px;
+}
+.exp2 .step33Ctrl1{
+    position: absolute;
+    left: 555px;
+    top: 308px;
     width: 81px;
     height: 61px;
+}
+.exp2 .step33Ctrl2{
+    position: absolute;
+    left: 810px;
+    top: 268px;
+    width: 81px;
+    height: 61px;
+}
+.exp2 .step33Ctrl3{
+    position: absolute;
+    left: 565px;
+    top: 480px;
+    width: 81px;
+    height: 61px;
+}
+.exp2 .step33Ctrl4{
+    position: absolute;
+    left:60%;
+    top:15px;
+    width: 141px;
+    height:35px;
+    padding-left: 10px;
+    line-height: 35px;
+}
+
+
+.exp2 .step34Image1{
+    position: absolute;
+    left:50px;
+    top:100px;
+    width: 300px;
+}
+.exp2 .step34Controls{
+    margin-top: 400px;
+    display: inline-block;
+}
+.exp2 .step34Image2{
+    width: 319px;
+    height: auto;
+    position: absolute;
+    left:650px;
+    top:340px;
+}
+.exp2 .step34Controls .sliderContainer{
+    position: relative;
+    display: inline-block;
+    margin-left: 40px;
+}
+.exp2 .step34Controls .sliderContainer .bg{
+    width: 347px;
+    height: 40px;
+    background: url(../../images/exp2/step34/image3.jpg) no-repeat;
+}
+.exp2 .step34Controls .sliderContainer .slider{
+    width: 21px;
+    height: 23px;
+    position: absolute;
+    top:2px;
+    left:150px;
+    background: url(../../images/exp2/step34/image4.png) no-repeat;
+    cursor: pointer;
+    font-size: 0px;
+}
+
+.exp2 .step34AnimateContainer{
+    position: absolute;
+    left:480px;
+    top: 100px;
+    overflow:hidden;
+}
+.exp2 .step34AnimateContainer .image2{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    z-index: 100;
+}
+.exp2 .step34AnimateContainer .image3{
+    position: absolute;
+    bottom:20px;
+    left:120px;
+}
+.exp2 .step34Ctrl1{
+    position: absolute;
+    left: 54px;
+    top: 452px;
+    width: 34px;
+    height: 34px;
+}
+.exp2 .step34Ctrl2{
+    position: absolute;
+    left:60%;
+    top:15px;
+    width: 141px;
+    height:35px;
+    padding-left: 10px;
+    line-height: 35px;
+}
+.exp2 .step35Image1{
+    margin:20px auto;
+    width: 769px;
+    display: block;
+}
+.exp2 .step35Ctrl1{
+    position: absolute;
+    left:60%;
+    top:15px;
+    width: 141px;
+    height:35px;
+    padding-left: 10px;
+    line-height: 35px;
+}
+.exp2 .step36Image1{
+    margin:20px auto;
+    width: 450px;
+    display: block;
 }
 
 
