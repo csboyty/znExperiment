@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="webkit" name="renderer">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="keywords" content="中南大学高等研究中心"/>
+    <meta name="description" content="中南大学高等研究中心">
+    <title>中南大学高等研究中心</title>
+    <link type="text/css" rel="stylesheet" href="css/src/main.css">
+    <!--[if IE 8]>
+    <style type="text/css">
+        video,embed{
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+    <![endif]-->
+    <script>
+        var pageName="video";
+    </script>
+</head>
+<body>
+<div class="wrapper">
+
+    <script src="header.js"></script>
+
+    <div class="main" >
+        <video width="1024" height="500" controls="controls" src="data/2.mp4">
+            <object width="1024" height="500" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+                    codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0">
+                <param name="src"
+                       value="data/moxieplayer.swf" />
+                <param name="flashvars" value="url=2.mp4&amp;poster=" />
+                <param name="allowfullscreen" value="true" />
+                <param name="allowscriptaccess" value="true" />
+                <embed width="1024" height="400" type="application/x-shockwave-flash"
+                       src="data/moxieplayer.swf"
+                       flashvars="url=2.mp4&amp;poster="
+                       allowfullscreen="true" allowscriptaccess="true" ></embed>
+            </object>
+
+        </video>
+    </div>
+</div>
+
+<script src="js/lib/jquery-1.11.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#menu a[data-page-name='"+pageName+"']").addClass("active");
+    });
+</script>
+</body>
+</html>

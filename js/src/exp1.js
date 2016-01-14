@@ -37,7 +37,7 @@ var exp1={
         $(".animate").animate({
             "opacity":0
         },600,function(){
-            $(".animate").css("opacity",1);
+            $(".animate").css("opacity",0.5);
             me.animated();
         });
     }

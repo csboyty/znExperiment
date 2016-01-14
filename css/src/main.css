@@ -22,6 +22,10 @@ ul{
 li{
     list-style: none;
 }
+video,embed{
+    width: 100%;
+    height: auto;
+}
 .hidden{
     display: none!important;
 }
@@ -33,6 +37,9 @@ li{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    background: #fff;
+    /*background: rgba(255,255,255,0);*/
+    /*filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcolorstr=#7fffffff);*/
 }
 .animate1{
     border: 3px solid yellow;
